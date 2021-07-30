@@ -1,4 +1,4 @@
-[English](../..) | 中文  
+[English](../../readme.md) | 中文  
 
 
 
