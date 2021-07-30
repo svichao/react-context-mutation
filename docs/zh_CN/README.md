@@ -1,4 +1,5 @@
-[English](../../) | 中文  
+[English](../..) | 中文  
+
 
 
 
@@ -8,10 +9,12 @@ react-context-mutation是一个为react应用设计的、更为轻量、便捷�
 
 
 
+
 # 安装
 ```
 npm install react-context-mutation
 ```
+
 
 
 
@@ -57,7 +60,8 @@ function Header(props) {
 
 
 
-# AppProvider生产者
+
+# AppProvider
 Provider 接收一个 config 属性，传递给消费组件。一个 Provider 可以和多个消费组件有对应关系。多个 Provider 也可以嵌套使用，里层的会覆盖外层的数据。
 
 ```
@@ -66,7 +70,8 @@ Provider 接收一个 config 属性，传递给消费组件。一个 Provider �
 
 
 
-# AppConsumer消费者
+
+# AppConsumer
 Consumer可以订阅 context 的变更，此组件可以让你在函数式组件中可以订阅 context
 
 
@@ -78,7 +83,8 @@ Consumer可以订阅 context 的变更，此组件可以让你在函数式组件
 
 
 
-# Context上下文
+
+# Context
 Context 提供了一种在组件之间共享此类值的方式，而不必显式地通过组件树的逐层传递 props,为了共享那些对于一个组件树而言是“全局”的数据
 ```
 <AppConsumer>
@@ -105,12 +111,14 @@ function Header(props) {
 
 
 
+
 # Mutation
 Mutation用于组件更新状态
 ```
 const { mutation } = ctx
 mutation([type](newState))
 ```
+
 
 
 

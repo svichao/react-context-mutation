@@ -2,9 +2,11 @@ English | [中文](docs/zh_CN)
 
 
 
+
 # NOTE
 
 React-context-mutation is a lighter and more convenient state manager designed for react applications. It aims to replace the Redux in react applications and solve the problems of too large Redux and difficult state maintenance and management in the project.
+
 
 
 
@@ -13,6 +15,7 @@ React-context-mutation is a lighter and more convenient state manager designed f
 ```
 npm install react-context-mutation
 ```
+
 
 
 
@@ -58,12 +61,14 @@ function Header(props) {
 
 
 
+
 # AppProvider
 The provider receives a config attribute and passes it to the consumer component. A provider can have corresponding relationships with multiple consumer components. Multiple providers can also be nested, and the data in the inner layer will cover the data in the outer layer.
 
 ```
 <AppProvider config={/* 某个值 */}>...</AppProvider>
 ```
+
 
 
 
@@ -76,6 +81,7 @@ The consumer component can subscribe to the change of context. This component al
   {value => /* 基于 context 值进行渲染*/}
 </.AppConsumer>
 ```
+
 
 
 
@@ -106,12 +112,14 @@ function Header(props) {
 
 
 
+
 # Mutation
 Mutation is used to update the status of components.
 ```
 const { mutation } = ctx
 mutation([type](newState))
 ```
+
 
 
 
