@@ -1,4 +1,4 @@
-English | [中文](docs/zh_CN) 
+English | [中文](README_zh.md) 
 
 
 
